@@ -1,3 +1,28 @@
+TIEV 2026 Beamer Template License Notice
+=======================================
+
+This repository contains the TIEV 2026 Beamer presentation template,
+a derivative and customized version of the earlier Tongji University
+Beamer Template. The TIEV-specific layout, theme code, sample slides,
+and integration of TIEV visual identity assets were added for the
+Tongji Intelligent Electric Vehicle / Intelligent Autonomous Systems
+presentation workflow.
+
+Copyright and attribution for the original template remain with their
+respective authors and contributors. The TIEV-specific modifications
+are maintained as part of this derived template. Unless a file states
+otherwise, the TeX source files in this repository are distributed
+under the LaTeX Project Public License version 1.3c or later.
+
+Logo, badge, and other institutional or team identity assets included
+in the figures directory are provided for use with this presentation
+template and remain subject to their respective trademark, institutional,
+or team identity rights. They are not relicensed as general-purpose
+open-source artwork by this notice.
+
+The full LPPL 1.3c license text follows unchanged.
+
+
 The LaTeX Project Public License
 =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-
 
