@@ -1,0 +1,198 @@
+\RequirePackage{tikz}
+\RequirePackage{graphicx}
+\RequirePackage{etoolbox}
+\RequirePackage{xcolor}
+
+\geometry{paperwidth=16cm,paperheight=9cm}
+\renewcommand{\familydefault}{\sfdefault}
+
+\definecolor{TIEVBlue}{HTML}{2462C6}
+\definecolor{TIEVDark}{HTML}{1F2937}
+\definecolor{TIEVMuted}{HTML}{626B78}
+\definecolor{TIEVLight}{HTML}{EFF5FF}
+\definecolor{TIEVLine}{HTML}{D8E5FA}
+
+\newcommand{\TIEVBadgeLogo}{figures/badge.png}
+\newcommand{\TIEVFullLogo}{figures/tiev2026-full-slide.png}
+\newcommand{\TIEVSimpleLogo}{figures/tiev2026-sim-l.png}
+\newcommand{\TIEVFooterText}{同济大学智能无人系统研究团队}
+
+\newcommand{\TIEVImage}[2]{%
+  \IfFileExists{#2}{\includegraphics[#1]{#2}}{}%
+}
+
+\setbeamertemplate{navigation symbols}{}
+\setbeamertemplate{headline}{}
+\setbeamersize{text margin left=1.18cm,text margin right=0.78cm}
+
+\setbeamercolor{normal text}{fg=TIEVDark,bg=white}
+\setbeamercolor{structure}{fg=TIEVBlue}
+\setbeamercolor{alerted text}{fg=TIEVBlue}
+\setbeamercolor{title}{fg=TIEVDark,bg=white}
+\setbeamercolor{subtitle}{fg=TIEVMuted,bg=white}
+\setbeamercolor{frametitle}{fg=TIEVDark,bg=}
+\setbeamercolor{framesubtitle}{fg=TIEVMuted,bg=white}
+\setbeamercolor{footline}{fg=TIEVMuted,bg=white}
+\setbeamercolor{block title}{fg=white,bg=TIEVBlue}
+\setbeamercolor{block body}{fg=TIEVDark,bg=TIEVLight}
+
+\setbeamerfont{title}{size=\fontsize{24}{30}\selectfont,series=\bfseries}
+\setbeamerfont{subtitle}{size=\fontsize{12}{16}\selectfont}
+\setbeamerfont{author}{size=\fontsize{8.8}{12}\selectfont}
+\setbeamerfont{date}{size=\fontsize{8}{11}\selectfont}
+\setbeamerfont{frametitle}{size=\fontsize{20}{24}\selectfont,series=\bfseries}
+\setbeamerfont{framesubtitle}{size=\fontsize{8.5}{11}\selectfont}
+\setbeamerfont{footline}{size=\fontsize{6.5}{8}\selectfont}
+\setbeamerfont{block title}{size=\fontsize{10.5}{13}\selectfont,series=\bfseries}
+
+\setbeamertemplate{itemize item}{\raise0.15ex\hbox{\color{TIEVBlue}\small$\blacktriangleright$}}
+\setbeamertemplate{itemize subitem}{\raise0.15ex\hbox{\color{TIEVBlue}\scriptsize$\bullet$}}
+\setbeamertemplate{enumerate item}{\color{TIEVBlue}\insertenumlabel.}
+\setbeamertemplate{blocks}[rounded][shadow=false]
+
+\newcommand{\TIEVCommonBackground}{%
+  \begin{tikzpicture}[remember picture,overlay]
+    \fill[TIEVBlue] (current page.north west)
+      rectangle ([xshift=0.44cm]current page.south west);
+    \node[anchor=north east,inner sep=0pt] at
+      ([xshift=-0.08cm,yshift=-0.06cm]current page.north east)
+      {\TIEVImage{width=0.84cm}{\TIEVBadgeLogo}};
+    \node[anchor=north east,inner sep=0pt] at
+      ([xshift=-1.08cm,yshift=-0.13cm]current page.north east)
+      {{\TIEVImage{width=2.50cm}{\TIEVSimpleLogo}}};
+  \end{tikzpicture}%
+}
+
+\newcommand{\TIEVTitleBackground}{%
+  \begin{tikzpicture}[remember picture,overlay]
+    \node[anchor=north west,inner sep=0pt] at
+      ([xshift=0.06cm,yshift=-0.07cm]current page.north west)
+      {\TIEVImage{width=1.21cm}{\TIEVBadgeLogo}};
+    \node[anchor=north west,inner sep=0pt] at
+      ([xshift=1.48cm,yshift=-0.23cm]current page.north west)
+      {\TIEVImage{width=3.50cm}{\TIEVFullLogo}};
+    \fill[TIEVBlue] (current page.south west)
+      rectangle ([yshift=0.33cm]current page.south east);
+  \end{tikzpicture}%
+}
+
+\newcommand{\TIEVClosingBackground}{%
+  \begin{tikzpicture}[remember picture,overlay]
+    \fill[TIEVBlue] (current page.north west)
+      rectangle ([xshift=0.44cm]current page.south west);
+    \node[anchor=north west,inner sep=0pt] at
+      ([xshift=0.57cm,yshift=-0.02cm]current page.north west)
+      {\TIEVImage{width=3.36cm}{\TIEVFullLogo}};
+    \node[anchor=north east,inner sep=0pt] at (current page.north east)
+      {\TIEVImage{width=0.90cm}{\TIEVBadgeLogo}};
+  \end{tikzpicture}%
+}
+
+\setbeamertemplate{background}{\TIEVCommonBackground}
+
+\setbeamertemplate{frametitle}{%
+  \vspace*{0.28cm}%
+  \begin{beamercolorbox}[wd=\dimexpr\paperwidth-4.45cm\relax,leftskip=0.72cm,rightskip=0pt]{frametitle}
+    \usebeamerfont{frametitle}\insertframetitle\par
+    \ifx\insertframesubtitle\@empty\else
+      \vspace{0.03cm}{\usebeamerfont{framesubtitle}\usebeamercolor[fg]{framesubtitle}\insertframesubtitle\par}
+    \fi
+  \end{beamercolorbox}
+  \vspace*{0.10cm}%
+}
+
+\newcommand{\TIEVFootline}{%
+  \begin{tikzpicture}[remember picture,overlay]
+    \node[anchor=south,font=\usebeamerfont{footline},text=TIEVMuted] at
+      ([yshift=0.15cm]current page.south) {\TIEVFooterText};
+    \node[anchor=south east,font=\usebeamerfont{footline},text=TIEVMuted] at
+      ([xshift=-0.80cm,yshift=0.15cm]current page.south east) {\insertframenumber};
+  \end{tikzpicture}%
+  \vspace*{0.42cm}%
+}
+\setbeamertemplate{footline}{\TIEVFootline}
+
+\newcommand{\TIEVFooterOnly}{%
+  \begin{tikzpicture}[remember picture,overlay]
+    \node[anchor=south,font=\usebeamerfont{footline},text=TIEVMuted] at
+      ([yshift=0.15cm]current page.south) {\TIEVFooterText};
+  \end{tikzpicture}%
+  \vspace*{0.42cm}%
+}
+
+\setbeamertemplate{title page}{%
+  \vspace*{2.34cm}
+  \begin{center}
+    {\usebeamerfont{title}\usebeamercolor[fg]{title}\inserttitle\par}
+    \vspace{0.36cm}
+    {\usebeamerfont{subtitle}\usebeamercolor[fg]{subtitle}\insertsubtitle\par}
+    \vspace{0.52cm}
+    {\usebeamerfont{author}\insertauthor\par}
+    \vspace{0.16cm}
+    {\usebeamerfont{date}\insertdate\par}
+  \end{center}
+}
+
+\renewcommand{\maketitle}{%
+  \begingroup
+    \setbeamertemplate{background}{\TIEVTitleBackground}
+    \setbeamertemplate{footline}{}
+    \begin{frame}[plain]
+      \titlepage
+    \end{frame}
+  \endgroup
+}
+
+\newcommand{\TIEVSectionPage}[1]{%
+  \begingroup
+    \setbeamertemplate{background}{}
+    \setbeamertemplate{footline}{}
+    \begin{frame}[plain]
+      \vfill
+      \begin{center}
+        {\fontsize{25}{31}\selectfont\bfseries #1\par}
+      \end{center}
+      \vfill
+    \end{frame}
+  \endgroup
+}
+
+\newenvironment{TIEVBlankFrame}
+  {%
+    \begingroup
+    \setbeamertemplate{frametitle}{}
+    \begin{frame}[t]%
+  }
+  {%
+    \end{frame}
+    \endgroup
+  }
+
+\newcommand{\TIEVThanksPage}[2][]{%
+  \begingroup
+    \setbeamertemplate{background}{\TIEVClosingBackground}
+    \setbeamertemplate{footline}{\TIEVFooterOnly}
+    \begin{frame}[plain]
+      \vspace*{1.46cm}
+      \begin{center}
+        {\fontsize{27}{34}\selectfont\bfseries #2\par}
+        \ifstrempty{#1}{}{%
+          \vspace{0.72cm}
+          {\fontsize{14}{19}\selectfont #1\par}
+        }
+      \end{center}
+    \end{frame}
+  \endgroup
+}
+
+\newenvironment{colorblock}[3][white]{%
+  \begingroup
+  \setbeamercolor{block title}{fg=#1,bg=#2}
+  \setbeamercolor{block body}{fg=TIEVDark,bg=TIEVLight}
+  \begin{block}{#3}
+}{%
+  \end{block}
+  \endgroup
+}
+
+\setbeamertemplate{frametitle continuation}{}
