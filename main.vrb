@@ -1,11 +1,6 @@
-\frametitle{标题和内容}
-\begin{itemize}
-    \item 这里放置本页的核心结论，尽量使用短句。
-    \item 普通内容页复刻 PPT 中的左侧蓝色竖条、右上角校徽与简化 logo。
-    \item 页脚文字和页码由主题自动生成，可在导言区重定义 \verb|\TIEVFooterText|。
-  \end{itemize}
+\frametitle{引用示例}
+使用 \verb|\citep| 可以生成括号引用，例如 \citep{latexcompanion}；
+  使用 \verb|\citet| 可以生成文本引用，例如 \citet{latexcompanion}。
 
   \vspace{0.35cm}
-  \begin{block}{重点信息}
-    可以用 block 承载方法、实验设置或阶段性结论。
-  \end{block}
+  将 BibTeX 条目写入 \verb|references.bib|，编译时会自动生成参考文献。

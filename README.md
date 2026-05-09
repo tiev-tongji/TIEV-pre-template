@@ -21,6 +21,9 @@ Tongji TIEV Lab Beamer template.
 * `main.tex`
 主文档文件
 
+* `references.bib`
+BibTeX 参考文献数据库
+
 * `make.bat`
 编译脚本文件
 
@@ -50,6 +53,10 @@ Options:
 
 Note: make without any option is equivalent to make all.
 ```
+
+## 参考文献
+
+模板已启用 `natbib`，可在正文中使用 `\citep{key}` 或 `\citet{key}`。将 BibTeX 条目写入 `references.bib` 后，使用 `latexmk -xelatex main.tex` 编译会自动运行 BibTeX 并生成参考文献页。
 
 ## 致谢
 

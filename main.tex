@@ -5,6 +5,7 @@
 \usepackage{booktabs}
 \usepackage{graphicx}
 \usepackage{amsmath}
+\usepackage[numbers]{natbib}
 
 \title{汇报题目 / Presentation Title}
 \subtitle{副标题或项目名称}
@@ -19,7 +20,7 @@
 % 版式 2：标题和内容
 \begin{frame}[t,fragile]{标题和内容}
   \begin{itemize}
-    \item 这里放置本页的核心结论，尽量使用短句。
+    \item 这里放置本页的核心结论，尽量使用短句\cite{latexcompanion}。
     \item 普通内容页复刻 PPT 中的左侧蓝色竖条、右上角校徽与简化 logo。
     \item 页脚文字和页码由主题自动生成，可在导言区重定义 \verb|\TIEVFooterText|。
   \end{itemize}
@@ -66,6 +67,20 @@
     \fbox{\rule{0pt}{4.15cm}\rule{10.6cm}{0pt}}
   \end{center}
 \end{TIEVBlankFrame}
+
+% 引用与参考文献
+\begin{frame}[t,fragile]{引用示例}
+  使用 \verb|\citep| 可以生成括号引用，例如 \citep{latexcompanion}；
+  使用 \verb|\citet| 可以生成文本引用，例如 \citet{latexcompanion}。
+
+  \vspace{0.35cm}
+  将 BibTeX 条目写入 \verb|references.bib|，编译时会自动生成参考文献。
+\end{frame}
+
+\begin{frame}[allowframebreaks]{参考文献}
+  \bibliographystyle{plainnat}
+  \bibliography{references}
+\end{frame}
 
 % 结束页：PPT 中的“敬请批评指正”
 \TIEVThanksPage[姓名 \quad email@tongji.edu.cn]{敬请批评指正！}

@@ -44,7 +44,7 @@ goto :EOF
 
 :clean
     latexmk -quiet -c %BEAMER% 2>nul
-    del /q "%BEAMER%.nav" "%BEAMER%.snm" "%BEAMER%.vrb" "%BEAMER%.synctex.gz" 2>nul
+    del /q "%BEAMER%.bbl" "%BEAMER%.bcf" "%BEAMER%.blg" "%BEAMER%.nav" "%BEAMER%.run.xml" "%BEAMER%.snm" "%BEAMER%.vrb" "%BEAMER%.synctex.gz" "%BEAMER%.xdv" 2>nul
 goto :EOF
 
 :help

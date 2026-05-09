@@ -1,0 +1,22 @@
+# LaTeX intermediate files
+*.aux
+*.bbl
+*.bcf
+*.blg
+*.fdb_latexmk
+*.fls
+*.log
+*.nav
+*.out
+*.run.xml
+*.snm
+*.synctex.gz
+*.toc
+*.vrb
+*.xdv
+
+# Keep built PDFs in the repository
+!*.pdf
+
+# Local editor and system files
+.DS_Store
