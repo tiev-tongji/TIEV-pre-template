@@ -2,11 +2,11 @@ TIEV 2026 Beamer Template License Notice
 =======================================
 
 This repository contains the TIEV 2026 Beamer presentation template,
-a derivative and customized version of the earlier Tongji University
-Beamer Template. The TIEV-specific layout, theme code, sample slides,
-and integration of TIEV visual identity assets were added for the
-Tongji Intelligent Electric Vehicle / Intelligent Autonomous Systems
-presentation workflow.
+a derivative and customized version maintained for Tongji TIEV Lab
+(同济智能无人系统实验室). TIEV stands for Tongji Intelligence,
+Embodiment & Vision. The TIEV-specific layout, theme code, sample slides, and
+integration of TIEV visual identity assets were added for the
+presentation workflow of Tongji TIEV Lab.
 
 Copyright and attribution for the original template remain with their
 respective authors and contributors. The TIEV-specific modifications

@@ -1,8 +1,8 @@
-# Tongji University Beamer Template
+# Tongji TIEV Lab Beamer Template
 
-Tongji university Beamer template.
+Tongji TIEV Lab Beamer template.
 
-同济大学演示文稿模板。
+同济智能无人系统实验室演示文稿模板。
 
 ## 仓库组成
 

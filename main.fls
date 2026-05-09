@@ -2,7 +2,7 @@ PWD /Users/john_/Documents/Projects/Tongji/智能无人车/Pub/Documents/logo/TI
 INPUT /usr/local/texlive/2025/texmf.cnf
 INPUT /usr/local/texlive/2025/texmf-dist/web2c/texmf.cnf
 INPUT /usr/local/texlive/2025/texmf-var/web2c/xetex/xelatex.fmt
-INPUT /Users/john_/Documents/Projects/Tongji/智能无人车/Pub/Documents/logo/TIEV-pre-template/main.tex
+INPUT main.tex
 OUTPUT main.log
 INPUT /usr/local/texlive/2025/texmf-dist/tex/latex/ctex/ctexbeamer.cls
 INPUT /usr/local/texlive/2025/texmf-dist/tex/latex/ctex/ctexbeamer.cls

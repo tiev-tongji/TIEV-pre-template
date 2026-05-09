@@ -1,11 +1,10 @@
 # Fdb version 4
-["xdvipdfmx"] 1778291206.5903 "main.xdv" "main.pdf" "main" 1778291209.21108 0
-  "main.xdv" 1778291206.44134 38996 cb14f3f7ca541d7185ccf21039ef73a5 "xelatex"
+["xdvipdfmx"] 1778292811.06518 "main.xdv" "main.pdf" "main" 1778292812.88555 0
+  "main.xdv" 1778292810.99844 38768 97f6d49727c8a48149aa4b24f70f7b9e "xelatex"
   (generated)
   "main.pdf"
   (rewritten before read)
-["xelatex"] 1778291205.4935 "/Users/john_/Documents/Projects/Tongji/智能无人车/Pub/Documents/logo/TIEV-pre-template/main.tex" "main.xdv" "main" 1778291209.20911 0
-  "/Users/john_/Documents/Projects/Tongji/智能无人车/Pub/Documents/logo/TIEV-pre-template/main.tex" 1778241564.08287 1953 a4a095b40e08e31f6c6e6d5fb80b559c ""
+["xelatex"] 1778292809.81582 "main.tex" "main.xdv" "main" 1778292812.88377 0
   "/usr/local/texlive/2025/texmf-dist/fonts/map/fontname/texfonts.map" 1577235249 3524 cb3e574dea2d1052e39280babc910dc8 ""
   "/usr/local/texlive/2025/texmf-dist/fonts/tfm/adobe/zapfding/pzdr.tfm" 1136768653 1528 f853c4d1b4e0550255e02831fdc8496f ""
   "/usr/local/texlive/2025/texmf-dist/fonts/tfm/public/amsfonts/cmextra/cmex7.tfm" 1246382020 1004 54797486969f23fa377b128694d548df ""
@@ -216,12 +215,12 @@
   "figures/badge.png" 1762444610.2406 779598 fee9192280a56809a041623e4e2064cb ""
   "figures/tiev2026-full-slide.png" 1778230760.65036 189300 02933542c9d758fd8528e58120728600 ""
   "figures/tiev2026-sim-l.png" 1778209445 114790 e880fbd2ba957c280ad43b9b0f4acc76 ""
-  "main.aux" 1778291206.44042 1669 268f4c2570633506a3a3d45a18fb9cf8 "xelatex"
-  "main.nav" 1778291206.44125 747 0e276c0940a342ad38699132b0e9aa8d "xelatex"
-  "main.out" 1778291206.27348 0 d41d8cd98f00b204e9800998ecf8427e "xelatex"
-  "main.tex" 1778241564.08287 1953 a4a095b40e08e31f6c6e6d5fb80b559c ""
-  "main.vrb" 1778291206.31526 463 6c28a51acd9d91cf4d23069da4058d8e "xelatex"
-  "style/beamerthemetiev2026.sty" 1778241884.56896 6641 783238585fce89c5f71a1af1c2dd9887 ""
+  "main.aux" 1778292810.9976 1669 268f4c2570633506a3a3d45a18fb9cf8 "xelatex"
+  "main.nav" 1778292810.99838 747 0e276c0940a342ad38699132b0e9aa8d "xelatex"
+  "main.out" 1778292810.79172 0 d41d8cd98f00b204e9800998ecf8427e "xelatex"
+  "main.tex" 1778292785.13919 1944 43d29dc70df7949d6881c5cd407bb039 ""
+  "main.vrb" 1778292810.84412 463 6c28a51acd9d91cf4d23069da4058d8e "xelatex"
+  "style/beamerthemetiev2026.sty" 1778292785.13956 6632 6836027a1e8c756826e2019932e642a7 ""
   (generated)
   "main.aux"
   "main.log"
