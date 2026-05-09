@@ -6,8 +6,8 @@ Tongji TIEV Lab Beamer template.
 
 ## 仓库组成
 
-* `/assets`
-模板展示
+* `/pptx`
+powerpoint version of the template
 
 * `/figures`
 图片文件
@@ -26,7 +26,7 @@ BibTeX 参考文献数据库
 
 * `make.bat`
 编译脚本文件
-
+<!-- 
 ## 模板展示
 
 <p align="center">
@@ -39,7 +39,7 @@ BibTeX 参考文献数据库
   <img src="assets/Demonstration7.png" width="30%">
   <img src="assets/Demonstration8.png" width="30%">
   <img src="assets/Demonstration9.png" width="30%">
-</p>
+</p> -->
 
 ## 编译项目
 
