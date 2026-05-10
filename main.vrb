@@ -1,6 +1,0 @@
-\frametitle{引用示例}
-使用 \verb|\citep| 可以生成括号引用，例如 \citep{latexcompanion}；
-  使用 \verb|\citet| 可以生成文本引用，例如 \citet{latexcompanion}。
-
-  \vspace{0.35cm}
-  将 BibTeX 条目写入 \verb|references.bib|，编译时会自动生成参考文献。
